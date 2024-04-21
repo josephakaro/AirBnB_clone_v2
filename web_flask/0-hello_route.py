@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-from . import create_app
-
-app = create_app()
+from . import app
 
 @app.route('/', strict_slashes=False)
 def hello_HBNB():
