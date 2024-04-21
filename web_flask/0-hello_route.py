@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Basic Route to run flask app
 @app.route("/", methods=['GET'])
-def HelloWorld():
-    return ""
+def Greetings():
+    return "Hello HBNB!"
 
 if __name__ == '__main__':
   # Disable Debug on Production Ready Server
