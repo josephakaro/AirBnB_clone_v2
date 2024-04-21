@@ -5,21 +5,10 @@ from flask import Flask, jsonify, request # Import flask, jsonify to parse the j
 # Initialising the flask App by assigning flask on app variabe
 app = Flask(__name__)
 
-greeting ={
- "Joseph": {
-    "Age": 27,
-    "Gender": "Male"
-  },
-  "Marko": {
-    "Age": 22,
-    "Gender": "Male"
-  }
-}
-
 # Basic Route to run flask app
-@app.route("/user/<string:name>", methods=['GET'])
+@app.route("/", methods=['GET'])
 def HelloWorld():
-    return jsonify(greeting)
+    return ""
 
 if __name__ == '__main__':
   # Disable Debug on Production Ready Server
