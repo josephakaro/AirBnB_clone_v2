@@ -18,14 +18,14 @@ def hello_hbnb():
     return "Hello HBNB!"
 
 
-@app.rout('/HBNB', strick_slashes=False)
-def hbnb()
+@app.rout('/hbnb', strick_slashes=False)
+def hbnb():
     """
     End-point that displays "HBNB"
     """
     return "HBNB"
 
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
 
