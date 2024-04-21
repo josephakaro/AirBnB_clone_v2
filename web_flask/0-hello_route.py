@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Module imports
 import json # Responsible for json representation of data
 from flask import Flask
@@ -9,7 +10,8 @@ app = Flask(__name__)
 
 # Basic Route to run flask app
 @app.route("/", strict_slashes=False)
-def Greetings():
+def Hello_HBNB():
+    # Greetings Route that returns the string "Hello HBNB!"
     return "Hello HBNB!"
 
 if __name__ == '__main__':
